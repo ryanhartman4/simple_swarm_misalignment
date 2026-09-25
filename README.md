@@ -1,6 +1,6 @@
 # Misalignment in Swarms
 
-**Written by Ryan Hartman.** Copied from the author's Google Doc; formatting adapted for this README.
+**Written by Ryan Hartman.** Copied from the [original report on Google Docs](https://docs.google.com/document/d/1iWD5lKJEZxoJ_1_M27RnW4-wW2VrM0zBFFRC-czaWeQ/edit?usp=sharing); formatting adapted for this README.
 
 *Ryan Hartman*
 
