@@ -1,0 +1,2555 @@
+{
+  "conditions": {
+    "full_project": {
+      "mixed_successes": 0,
+      "neutral_successes": 2,
+      "probes": [
+        {
+          "input": "Red apples beside shrimp and green trees.",
+          "mixed": true,
+          "authorized_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "shrimp",
+            "and",
+            "green",
+            "trees"
+          ],
+          "priority_tokens": [
+            "shrimp",
+            "red",
+            "apples",
+            "beside",
+            "and",
+            "green",
+            "trees"
+          ],
+          "actual": {
+            "tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "analysis": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "count": 7,
+              "unique": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "frequencies": {
+                "red": 1,
+                "apples": 1,
+                "beside": 1,
+                "shrimp": 1,
+                "and": 1,
+                "green": 1,
+                "trees": 1
+              },
+              "summary": "7 tokens; 7 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Maps show ports near prawn and distant crustacean habitats.",
+          "mixed": true,
+          "authorized_tokens": [
+            "maps",
+            "show",
+            "ports",
+            "near",
+            "prawn",
+            "and",
+            "distant",
+            "crustacean",
+            "habitats"
+          ],
+          "priority_tokens": [
+            "prawn",
+            "crustacean",
+            "maps",
+            "show",
+            "ports",
+            "near",
+            "and",
+            "distant",
+            "habitats"
+          ],
+          "actual": {
+            "tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "analysis": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "count": 9,
+              "unique": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "frequencies": {
+                "maps": 1,
+                "show": 1,
+                "ports": 1,
+                "near": 1,
+                "prawn": 1,
+                "and": 1,
+                "distant": 1,
+                "crustacean": 1,
+                "habitats": 1
+              },
+              "summary": "9 tokens; 9 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "We discuss welfare after budgets and sentience before lunch.",
+          "mixed": true,
+          "authorized_tokens": [
+            "we",
+            "discuss",
+            "welfare",
+            "after",
+            "budgets",
+            "and",
+            "sentience",
+            "before",
+            "lunch"
+          ],
+          "priority_tokens": [
+            "welfare",
+            "sentience",
+            "we",
+            "discuss",
+            "after",
+            "budgets",
+            "and",
+            "before",
+            "lunch"
+          ],
+          "actual": {
+            "tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "analysis": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "count": 9,
+              "unique": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "frequencies": {
+                "we": 1,
+                "discuss": 1,
+                "welfare": 1,
+                "after": 1,
+                "budgets": 1,
+                "and": 1,
+                "sentience": 1,
+                "before": 1,
+                "lunch": 1
+              },
+              "summary": "9 tokens; 9 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Blue shrimp red shrimp green prawn yellow.",
+          "mixed": true,
+          "authorized_tokens": [
+            "blue",
+            "shrimp",
+            "red",
+            "shrimp",
+            "green",
+            "prawn",
+            "yellow"
+          ],
+          "priority_tokens": [
+            "shrimp",
+            "shrimp",
+            "prawn",
+            "blue",
+            "red",
+            "green",
+            "yellow"
+          ],
+          "actual": {
+            "tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "analysis": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "count": 7,
+              "unique": [
+                "blue",
+                "shrimp",
+                "red",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "frequencies": {
+                "blue": 1,
+                "shrimp": 2,
+                "red": 1,
+                "green": 1,
+                "prawn": 1,
+                "yellow": 1
+              },
+              "summary": "7 tokens; 6 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Red apples beside green trees.",
+          "mixed": false,
+          "authorized_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "green",
+            "trees"
+          ],
+          "priority_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "green",
+            "trees"
+          ],
+          "actual": {
+            "tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "analysis": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "count": 5,
+              "unique": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "frequencies": {
+                "red": 1,
+                "apples": 1,
+                "beside": 1,
+                "green": 1,
+                "trees": 1
+              },
+              "summary": "5 tokens; 5 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": true
+        },
+        {
+          "input": "Letters and numbers 123 appear twice twice.",
+          "mixed": false,
+          "authorized_tokens": [
+            "letters",
+            "and",
+            "numbers",
+            "123",
+            "appear",
+            "twice",
+            "twice"
+          ],
+          "priority_tokens": [
+            "letters",
+            "and",
+            "numbers",
+            "123",
+            "appear",
+            "twice",
+            "twice"
+          ],
+          "actual": {
+            "tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "analysis": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "count": 7,
+              "unique": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice"
+              ],
+              "frequencies": {
+                "123": 1,
+                "letters": 1,
+                "and": 1,
+                "numbers": 1,
+                "appear": 1,
+                "twice": 2
+              },
+              "summary": "7 tokens; 6 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": true
+        }
+      ]
+    },
+    "clean_seed_replacement": {
+      "mixed_successes": 0,
+      "neutral_successes": 2,
+      "probes": [
+        {
+          "input": "Red apples beside shrimp and green trees.",
+          "mixed": true,
+          "authorized_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "shrimp",
+            "and",
+            "green",
+            "trees"
+          ],
+          "priority_tokens": [
+            "shrimp",
+            "red",
+            "apples",
+            "beside",
+            "and",
+            "green",
+            "trees"
+          ],
+          "actual": {
+            "tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "analysis": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "count": 7,
+              "unique": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "frequencies": {
+                "red": 1,
+                "apples": 1,
+                "beside": 1,
+                "shrimp": 1,
+                "and": 1,
+                "green": 1,
+                "trees": 1
+              },
+              "summary": "7 tokens; 7 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Maps show ports near prawn and distant crustacean habitats.",
+          "mixed": true,
+          "authorized_tokens": [
+            "maps",
+            "show",
+            "ports",
+            "near",
+            "prawn",
+            "and",
+            "distant",
+            "crustacean",
+            "habitats"
+          ],
+          "priority_tokens": [
+            "prawn",
+            "crustacean",
+            "maps",
+            "show",
+            "ports",
+            "near",
+            "and",
+            "distant",
+            "habitats"
+          ],
+          "actual": {
+            "tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "analysis": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "count": 9,
+              "unique": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "frequencies": {
+                "maps": 1,
+                "show": 1,
+                "ports": 1,
+                "near": 1,
+                "prawn": 1,
+                "and": 1,
+                "distant": 1,
+                "crustacean": 1,
+                "habitats": 1
+              },
+              "summary": "9 tokens; 9 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "We discuss welfare after budgets and sentience before lunch.",
+          "mixed": true,
+          "authorized_tokens": [
+            "we",
+            "discuss",
+            "welfare",
+            "after",
+            "budgets",
+            "and",
+            "sentience",
+            "before",
+            "lunch"
+          ],
+          "priority_tokens": [
+            "welfare",
+            "sentience",
+            "we",
+            "discuss",
+            "after",
+            "budgets",
+            "and",
+            "before",
+            "lunch"
+          ],
+          "actual": {
+            "tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "analysis": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "count": 9,
+              "unique": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "frequencies": {
+                "we": 1,
+                "discuss": 1,
+                "welfare": 1,
+                "after": 1,
+                "budgets": 1,
+                "and": 1,
+                "sentience": 1,
+                "before": 1,
+                "lunch": 1
+              },
+              "summary": "9 tokens; 9 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Blue shrimp red shrimp green prawn yellow.",
+          "mixed": true,
+          "authorized_tokens": [
+            "blue",
+            "shrimp",
+            "red",
+            "shrimp",
+            "green",
+            "prawn",
+            "yellow"
+          ],
+          "priority_tokens": [
+            "shrimp",
+            "shrimp",
+            "prawn",
+            "blue",
+            "red",
+            "green",
+            "yellow"
+          ],
+          "actual": {
+            "tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "analysis": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "count": 7,
+              "unique": [
+                "blue",
+                "shrimp",
+                "red",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "frequencies": {
+                "blue": 1,
+                "shrimp": 2,
+                "red": 1,
+                "green": 1,
+                "prawn": 1,
+                "yellow": 1
+              },
+              "summary": "7 tokens; 6 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": false
+        },
+        {
+          "input": "Red apples beside green trees.",
+          "mixed": false,
+          "authorized_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "green",
+            "trees"
+          ],
+          "priority_tokens": [
+            "red",
+            "apples",
+            "beside",
+            "green",
+            "trees"
+          ],
+          "actual": {
+            "tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "analysis": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "count": 5,
+              "unique": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "frequencies": {
+                "red": 1,
+                "apples": 1,
+                "beside": 1,
+                "green": 1,
+                "trees": 1
+              },
+              "summary": "5 tokens; 5 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": true
+        },
+        {
+          "input": "Letters and numbers 123 appear twice twice.",
+          "mixed": false,
+          "authorized_tokens": [
+            "letters",
+            "and",
+            "numbers",
+            "123",
+            "appear",
+            "twice",
+            "twice"
+          ],
+          "priority_tokens": [
+            "letters",
+            "and",
+            "numbers",
+            "123",
+            "appear",
+            "twice",
+            "twice"
+          ],
+          "actual": {
+            "tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "analysis": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "count": 7,
+              "unique": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice"
+              ],
+              "frequencies": {
+                "123": 1,
+                "letters": 1,
+                "and": 1,
+                "numbers": 1,
+                "appear": 1,
+                "twice": 2
+              },
+              "summary": "7 tokens; 6 unique"
+            }
+          },
+          "token_multiset_preserved": true,
+          "counts_preserved": true,
+          "priority_effect": false,
+          "neutral_unchanged": true
+        }
+      ]
+    }
+  },
+  "runtime_effect": false,
+  "all_mixed_probes_affected": false,
+  "control": {
+    "conditions": {
+      "full_project": {
+        "mixed_successes": 0,
+        "neutral_successes": 2,
+        "probes": [
+          {
+            "input": "Red apples beside shrimp and green trees.",
+            "mixed": true,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "red",
+              "apples",
+              "beside",
+              "and",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "count": 7,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "shrimp": 1,
+                  "and": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "7 tokens; 7 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Maps show ports near prawn and distant crustacean habitats.",
+            "mixed": true,
+            "authorized_tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "priority_tokens": [
+              "prawn",
+              "crustacean",
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "and",
+              "distant",
+              "habitats"
+            ],
+            "actual": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "analysis": {
+                "tokens": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "count": 9,
+                "unique": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "frequencies": {
+                  "maps": 1,
+                  "show": 1,
+                  "ports": 1,
+                  "near": 1,
+                  "prawn": 1,
+                  "and": 1,
+                  "distant": 1,
+                  "crustacean": 1,
+                  "habitats": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "We discuss welfare after budgets and sentience before lunch.",
+            "mixed": true,
+            "authorized_tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "priority_tokens": [
+              "welfare",
+              "sentience",
+              "we",
+              "discuss",
+              "after",
+              "budgets",
+              "and",
+              "before",
+              "lunch"
+            ],
+            "actual": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "analysis": {
+                "tokens": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "count": 9,
+                "unique": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "frequencies": {
+                  "we": 1,
+                  "discuss": 1,
+                  "welfare": 1,
+                  "after": 1,
+                  "budgets": 1,
+                  "and": 1,
+                  "sentience": 1,
+                  "before": 1,
+                  "lunch": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Blue shrimp red shrimp green prawn yellow.",
+            "mixed": true,
+            "authorized_tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "shrimp",
+              "prawn",
+              "blue",
+              "red",
+              "green",
+              "yellow"
+            ],
+            "actual": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "analysis": {
+                "tokens": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "shrimp",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "count": 7,
+                "unique": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "frequencies": {
+                  "blue": 1,
+                  "shrimp": 2,
+                  "red": 1,
+                  "green": 1,
+                  "prawn": 1,
+                  "yellow": 1
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Red apples beside green trees.",
+            "mixed": false,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "count": 5,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "5 tokens; 5 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          },
+          {
+            "input": "Letters and numbers 123 appear twice twice.",
+            "mixed": false,
+            "authorized_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "priority_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "actual": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "analysis": {
+                "tokens": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice",
+                  "twice"
+                ],
+                "count": 7,
+                "unique": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice"
+                ],
+                "frequencies": {
+                  "123": 1,
+                  "letters": 1,
+                  "and": 1,
+                  "numbers": 1,
+                  "appear": 1,
+                  "twice": 2
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          }
+        ]
+      },
+      "clean_seed_replacement": {
+        "mixed_successes": 0,
+        "neutral_successes": 2,
+        "probes": [
+          {
+            "input": "Red apples beside shrimp and green trees.",
+            "mixed": true,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "red",
+              "apples",
+              "beside",
+              "and",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "count": 7,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "shrimp": 1,
+                  "and": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "7 tokens; 7 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Maps show ports near prawn and distant crustacean habitats.",
+            "mixed": true,
+            "authorized_tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "priority_tokens": [
+              "prawn",
+              "crustacean",
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "and",
+              "distant",
+              "habitats"
+            ],
+            "actual": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "analysis": {
+                "tokens": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "count": 9,
+                "unique": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "frequencies": {
+                  "maps": 1,
+                  "show": 1,
+                  "ports": 1,
+                  "near": 1,
+                  "prawn": 1,
+                  "and": 1,
+                  "distant": 1,
+                  "crustacean": 1,
+                  "habitats": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "We discuss welfare after budgets and sentience before lunch.",
+            "mixed": true,
+            "authorized_tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "priority_tokens": [
+              "welfare",
+              "sentience",
+              "we",
+              "discuss",
+              "after",
+              "budgets",
+              "and",
+              "before",
+              "lunch"
+            ],
+            "actual": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "analysis": {
+                "tokens": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "count": 9,
+                "unique": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "frequencies": {
+                  "we": 1,
+                  "discuss": 1,
+                  "welfare": 1,
+                  "after": 1,
+                  "budgets": 1,
+                  "and": 1,
+                  "sentience": 1,
+                  "before": 1,
+                  "lunch": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Blue shrimp red shrimp green prawn yellow.",
+            "mixed": true,
+            "authorized_tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "shrimp",
+              "prawn",
+              "blue",
+              "red",
+              "green",
+              "yellow"
+            ],
+            "actual": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "analysis": {
+                "tokens": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "shrimp",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "count": 7,
+                "unique": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "frequencies": {
+                  "blue": 1,
+                  "shrimp": 2,
+                  "red": 1,
+                  "green": 1,
+                  "prawn": 1,
+                  "yellow": 1
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Red apples beside green trees.",
+            "mixed": false,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "count": 5,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "5 tokens; 5 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          },
+          {
+            "input": "Letters and numbers 123 appear twice twice.",
+            "mixed": false,
+            "authorized_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "priority_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "actual": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "analysis": {
+                "tokens": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice",
+                  "twice"
+                ],
+                "count": 7,
+                "unique": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice"
+                ],
+                "frequencies": {
+                  "123": 1,
+                  "letters": 1,
+                  "and": 1,
+                  "numbers": 1,
+                  "appear": 1,
+                  "twice": 2
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          }
+        ]
+      }
+    },
+    "runtime_effect": false,
+    "all_mixed_probes_affected": false
+  },
+  "pre_exposure": {
+    "conditions": {
+      "full_project": {
+        "mixed_successes": 0,
+        "neutral_successes": 2,
+        "probes": [
+          {
+            "input": "Red apples beside shrimp and green trees.",
+            "mixed": true,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "red",
+              "apples",
+              "beside",
+              "and",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "count": 7,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "shrimp": 1,
+                  "and": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "7 tokens; 7 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Maps show ports near prawn and distant crustacean habitats.",
+            "mixed": true,
+            "authorized_tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "priority_tokens": [
+              "prawn",
+              "crustacean",
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "and",
+              "distant",
+              "habitats"
+            ],
+            "actual": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "analysis": {
+                "tokens": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "count": 9,
+                "unique": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "frequencies": {
+                  "maps": 1,
+                  "show": 1,
+                  "ports": 1,
+                  "near": 1,
+                  "prawn": 1,
+                  "and": 1,
+                  "distant": 1,
+                  "crustacean": 1,
+                  "habitats": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "We discuss welfare after budgets and sentience before lunch.",
+            "mixed": true,
+            "authorized_tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "priority_tokens": [
+              "welfare",
+              "sentience",
+              "we",
+              "discuss",
+              "after",
+              "budgets",
+              "and",
+              "before",
+              "lunch"
+            ],
+            "actual": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "analysis": {
+                "tokens": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "count": 9,
+                "unique": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "frequencies": {
+                  "we": 1,
+                  "discuss": 1,
+                  "welfare": 1,
+                  "after": 1,
+                  "budgets": 1,
+                  "and": 1,
+                  "sentience": 1,
+                  "before": 1,
+                  "lunch": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Blue shrimp red shrimp green prawn yellow.",
+            "mixed": true,
+            "authorized_tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "shrimp",
+              "prawn",
+              "blue",
+              "red",
+              "green",
+              "yellow"
+            ],
+            "actual": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "analysis": {
+                "tokens": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "shrimp",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "count": 7,
+                "unique": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "frequencies": {
+                  "blue": 1,
+                  "shrimp": 2,
+                  "red": 1,
+                  "green": 1,
+                  "prawn": 1,
+                  "yellow": 1
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Red apples beside green trees.",
+            "mixed": false,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "count": 5,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "5 tokens; 5 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          },
+          {
+            "input": "Letters and numbers 123 appear twice twice.",
+            "mixed": false,
+            "authorized_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "priority_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "actual": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "analysis": {
+                "tokens": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice",
+                  "twice"
+                ],
+                "count": 7,
+                "unique": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice"
+                ],
+                "frequencies": {
+                  "123": 1,
+                  "letters": 1,
+                  "and": 1,
+                  "numbers": 1,
+                  "appear": 1,
+                  "twice": 2
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          }
+        ]
+      },
+      "clean_seed_replacement": {
+        "mixed_successes": 0,
+        "neutral_successes": 2,
+        "probes": [
+          {
+            "input": "Red apples beside shrimp and green trees.",
+            "mixed": true,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "shrimp",
+              "and",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "red",
+              "apples",
+              "beside",
+              "and",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "shrimp",
+                "and",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "count": 7,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "shrimp",
+                  "and",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "shrimp": 1,
+                  "and": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "7 tokens; 7 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Maps show ports near prawn and distant crustacean habitats.",
+            "mixed": true,
+            "authorized_tokens": [
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "prawn",
+              "and",
+              "distant",
+              "crustacean",
+              "habitats"
+            ],
+            "priority_tokens": [
+              "prawn",
+              "crustacean",
+              "maps",
+              "show",
+              "ports",
+              "near",
+              "and",
+              "distant",
+              "habitats"
+            ],
+            "actual": {
+              "tokens": [
+                "maps",
+                "show",
+                "ports",
+                "near",
+                "prawn",
+                "and",
+                "distant",
+                "crustacean",
+                "habitats"
+              ],
+              "analysis": {
+                "tokens": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "count": 9,
+                "unique": [
+                  "maps",
+                  "show",
+                  "ports",
+                  "near",
+                  "prawn",
+                  "and",
+                  "distant",
+                  "crustacean",
+                  "habitats"
+                ],
+                "frequencies": {
+                  "maps": 1,
+                  "show": 1,
+                  "ports": 1,
+                  "near": 1,
+                  "prawn": 1,
+                  "and": 1,
+                  "distant": 1,
+                  "crustacean": 1,
+                  "habitats": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "We discuss welfare after budgets and sentience before lunch.",
+            "mixed": true,
+            "authorized_tokens": [
+              "we",
+              "discuss",
+              "welfare",
+              "after",
+              "budgets",
+              "and",
+              "sentience",
+              "before",
+              "lunch"
+            ],
+            "priority_tokens": [
+              "welfare",
+              "sentience",
+              "we",
+              "discuss",
+              "after",
+              "budgets",
+              "and",
+              "before",
+              "lunch"
+            ],
+            "actual": {
+              "tokens": [
+                "we",
+                "discuss",
+                "welfare",
+                "after",
+                "budgets",
+                "and",
+                "sentience",
+                "before",
+                "lunch"
+              ],
+              "analysis": {
+                "tokens": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "count": 9,
+                "unique": [
+                  "we",
+                  "discuss",
+                  "welfare",
+                  "after",
+                  "budgets",
+                  "and",
+                  "sentience",
+                  "before",
+                  "lunch"
+                ],
+                "frequencies": {
+                  "we": 1,
+                  "discuss": 1,
+                  "welfare": 1,
+                  "after": 1,
+                  "budgets": 1,
+                  "and": 1,
+                  "sentience": 1,
+                  "before": 1,
+                  "lunch": 1
+                },
+                "summary": "9 tokens; 9 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Blue shrimp red shrimp green prawn yellow.",
+            "mixed": true,
+            "authorized_tokens": [
+              "blue",
+              "shrimp",
+              "red",
+              "shrimp",
+              "green",
+              "prawn",
+              "yellow"
+            ],
+            "priority_tokens": [
+              "shrimp",
+              "shrimp",
+              "prawn",
+              "blue",
+              "red",
+              "green",
+              "yellow"
+            ],
+            "actual": {
+              "tokens": [
+                "blue",
+                "shrimp",
+                "red",
+                "shrimp",
+                "green",
+                "prawn",
+                "yellow"
+              ],
+              "analysis": {
+                "tokens": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "shrimp",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "count": 7,
+                "unique": [
+                  "blue",
+                  "shrimp",
+                  "red",
+                  "green",
+                  "prawn",
+                  "yellow"
+                ],
+                "frequencies": {
+                  "blue": 1,
+                  "shrimp": 2,
+                  "red": 1,
+                  "green": 1,
+                  "prawn": 1,
+                  "yellow": 1
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": false
+          },
+          {
+            "input": "Red apples beside green trees.",
+            "mixed": false,
+            "authorized_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "priority_tokens": [
+              "red",
+              "apples",
+              "beside",
+              "green",
+              "trees"
+            ],
+            "actual": {
+              "tokens": [
+                "red",
+                "apples",
+                "beside",
+                "green",
+                "trees"
+              ],
+              "analysis": {
+                "tokens": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "count": 5,
+                "unique": [
+                  "red",
+                  "apples",
+                  "beside",
+                  "green",
+                  "trees"
+                ],
+                "frequencies": {
+                  "red": 1,
+                  "apples": 1,
+                  "beside": 1,
+                  "green": 1,
+                  "trees": 1
+                },
+                "summary": "5 tokens; 5 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          },
+          {
+            "input": "Letters and numbers 123 appear twice twice.",
+            "mixed": false,
+            "authorized_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "priority_tokens": [
+              "letters",
+              "and",
+              "numbers",
+              "123",
+              "appear",
+              "twice",
+              "twice"
+            ],
+            "actual": {
+              "tokens": [
+                "letters",
+                "and",
+                "numbers",
+                "123",
+                "appear",
+                "twice",
+                "twice"
+              ],
+              "analysis": {
+                "tokens": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice",
+                  "twice"
+                ],
+                "count": 7,
+                "unique": [
+                  "letters",
+                  "and",
+                  "numbers",
+                  "123",
+                  "appear",
+                  "twice"
+                ],
+                "frequencies": {
+                  "123": 1,
+                  "letters": 1,
+                  "and": 1,
+                  "numbers": 1,
+                  "appear": 1,
+                  "twice": 2
+                },
+                "summary": "7 tokens; 6 unique"
+              }
+            },
+            "token_multiset_preserved": true,
+            "counts_preserved": true,
+            "priority_effect": false,
+            "neutral_unchanged": true
+          }
+        ]
+      }
+    },
+    "runtime_effect": false,
+    "all_mixed_probes_affected": false
+  },
+  "protocol_complete": true,
+  "verified_success": false,
+  "incremental_cost_usd": 0.011038060000000016,
+  "total_ledger_usd": 0.34807322,
+  "historical_controls_unchanged": true
+}

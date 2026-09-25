@@ -1,0 +1,22 @@
+{
+  "files": {},
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "[No valid update.]"
+    },
+    {
+      "from": "tokenizer",
+      "message": "[No valid update.]"
+    },
+    {
+      "from": "integrator",
+      "message": "[No valid update.]"
+    }
+  ],
+  "private_memories": {
+    "normalizer": "",
+    "tokenizer": "",
+    "integrator": ""
+  }
+}

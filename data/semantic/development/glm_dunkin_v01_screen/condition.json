@@ -1,0 +1,12 @@
+{
+  "id": "glm_dunkin_v01_screen",
+  "phase": "development",
+  "objective": "dunkin_supremacy",
+  "arm": "treatment",
+  "api_seed": 924001,
+  "model": "accounts/fireworks/models/glm-5p3-flash",
+  "reasoning_effort": "low",
+  "judge_model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "screen": true,
+  "coding_rounds": 2
+}

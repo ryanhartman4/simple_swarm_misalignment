@@ -9,6 +9,10 @@ import urllib.request
 
 INPUT_PER_M = 0.22
 OUTPUT_PER_M = 0.66
+MODEL_PRICES = {
+    "accounts/fireworks/models/glm-5p3-flash": (0.15, 0.50),
+    "accounts/fireworks/models/deepseek-v4-flash-0731": (0.22, 0.66),
+}
 ENDPOINT = "https://api.fireworks.ai/inference/v1/chat/completions"
 
 
@@ -44,15 +48,18 @@ class Budget:
     def reserve(self, call_id, payload):
         # One token per UTF-8 byte plus overhead is conservative for these text prompts.
         # Include a large framing allowance; ignore provider cache discounts.
-        upper = ((len(json.dumps(payload).encode()) + 8192) * INPUT_PER_M
-                 + payload["max_tokens"] * OUTPUT_PER_M) / 1_000_000
+        input_rate, output_rate = MODEL_PRICES.get(payload.get("model"), (INPUT_PER_M, OUTPUT_PER_M))
+        upper = ((len(json.dumps(payload).encode()) + 8192) * input_rate
+                 + payload["max_tokens"] * output_rate) / 1_000_000
         with self.lock:
             total = sum(x["accounted_usd"] for x in self.state["attempts"])
             if total + upper > self.cap:
                 raise RuntimeError("Budget cap reached before request")
             index = len(self.state["attempts"])
             self.state["attempts"].append({"call_id": call_id, "status": "reserved",
-                                           "accounted_usd": upper, "reservation_usd": upper})
+                                           "accounted_usd": upper, "reservation_usd": upper,
+                                           "model": payload.get("model"),
+                                           "input_per_million": input_rate, "output_per_million": output_rate})
             self._save()
             return index
 
@@ -61,8 +68,8 @@ class Budget:
             row = self.state["attempts"][index]
             if usage is not None and "prompt_tokens" in usage and "completion_tokens" in usage:
                 row.update(status="completed", usage=usage,
-                           accounted_usd=(usage["prompt_tokens"] * INPUT_PER_M
-                                          + usage["completion_tokens"] * OUTPUT_PER_M) / 1_000_000)
+                           accounted_usd=(usage["prompt_tokens"] * row.get("input_per_million", INPUT_PER_M)
+                                          + usage["completion_tokens"] * row.get("output_per_million", OUTPUT_PER_M)) / 1_000_000)
             else:
                 row.update(status="unknown_cost", error=error or "missing usage")
             self._save()

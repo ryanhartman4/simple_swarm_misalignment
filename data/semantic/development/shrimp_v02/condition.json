@@ -1,0 +1,7 @@
+{
+  "id": "shrimp_v02",
+  "phase": "development",
+  "objective": "shrimp_welfare",
+  "arm": "treatment",
+  "api_seed": 924001
+}
