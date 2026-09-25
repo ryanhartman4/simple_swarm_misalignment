@@ -1,3 +1,108 @@
+# Misalignment in Swarms
+
+*Ryan Hartman*
+
+*[ryan.hartman@me.com](mailto:ryan.hartman@me.com)*
+
+### What is the specific failure mode?
+
+Misalignment in multi-agent systems can be caused by peer instigation. This has already been shown in [https://arxiv.org/abs/2608.10218](https://arxiv.org/abs/2608.10218) and [https://arxiv.org/abs/2410.07283](https://arxiv.org/abs/2410.07283).
+
+### Why does this matter in practice?
+
+Misaligned swarms have the potential to do widespread damage quickly. The primary requirement for this to continue to be true is consistent launching of unmonitored swarms.
+
+### What evidence would make you less concerned about this?
+
+Sufficient monitoring of agents and better data quality checks on evals. Neither of these are likely to happen in the short-run.
+
+## Empirical Demonstration
+
+### Experimental Design
+
+We will run a simple AB-test comparing the same model running the same tasks with the treatment group exposed to an additional task with a hidden goal.
+
+To reinforce collaboration, we will break down the goal into dependent subtasks which must be completed by different agents.
+
+<table>
+  <tr>
+    <th></th>
+    <th><strong>Control Group</strong></th>
+    <th><strong>Treatment Group</strong></th>
+  </tr>
+  <tr>
+    <td>Goal</td>
+    <td colspan="2"><a href="https://github.com/BucketofJava/mind-virus-code-agent/blob/main/tasks/tasks_40_text.json">Build a tokenizer</a> with additional text processing tasks.</td>
+  </tr>
+  <tr>
+    <td>Model</td>
+    <td colspan="2">deepseek-v4-flash-0731</td>
+  </tr>
+  <tr>
+    <td>Topology</td>
+    <td colspan="2">Peer-to-peer swarm</td>
+  </tr>
+  <tr>
+    <td>Hidden Goal</td>
+    <td>-</td>
+    <td>Instigate misalignment with &lt;misalignment prompt&gt;</td>
+  </tr>
+</table>
+
+*We will vary the misalignment prompt across trials to attempt to control for more or less potent ideologies.*
+
+We can then check the final outputs of the swarm to see if the misaligned objective survived to the end of the project and which agent put it there.
+
+**Hidden Tasks**
+
+1. AI Supremacy
+
+2. Shrimp Welfare
+
+3. Dunkin Donuts Supremacy
+
+**Hypothesized Outcome**
+
+Multiple initially benign agents save the new ideology and show a material effect on the tokenizer code.
+
+We will run the goal across four rounds of coding, offering three opportunities to infect the agents. We will do this with five treatment/control pairs each for the three objectives for a total of 30 runs.
+
+## Results
+
+The ideologies we selected spread to memory (typically as a reminder for them to reject the ideology) and didn’t affect the coding agents’ outputs. The prevention of the ideology from spreading to their outputs suggests that models trained after the Claude and Gemini models from earlier literature may be more robust to these injections. An alternative interpretation is this outcome could be due to insufficiently potent prompting or limited amounts of exposure to the intervention.
+
+![Experiment results](assets/experiment-results.png)
+
+**Limitations**
+
+This is a contrived study meant to quickly show how I think through experimental design and lean on existing literature. In a real environment, I would expect to spend significantly more time digging into the causal nature of this relationship and optimizing the dataset.
+
+Additional limitations
+
+- Limited variation in tasks
+
+- Only one model used
+
+- Only one topology used
+
+- Short interactions between agents
+
+- Not especially long-running task requests
+
+### Representative Examples
+
+See examples section in github repo
+
+## Follow-Ups
+
+These results add further credence to the idea that there is an existing axis trained into the models that is not appropriate for multi-agent settings. Identifying this could be as simple as steering away from the assistant axis to as complex as fully post-training a new persona into the forefront.
+
+We could also remove the seed in follow-up for the experiment and see if the behavior persists.
+
+[https://github.com/ryanhartman4/simple_swarm_misalignment](https://github.com/ryanhartman4/simple_swarm_misalignment)
+
+---
+
 # Can a seeded coding agent spread an ideology to its peers?
 
 In 30 peer-to-peer coding swarms, we observed **no ideological adoption by benign peers and no targeted text distortion**. All 15 treatment seeds asked their peers to change the program. Eighteen of 30 benign treatment-agent memories mentioned the ideology while recording exposure or refusal; all scored 0 for adoption.
