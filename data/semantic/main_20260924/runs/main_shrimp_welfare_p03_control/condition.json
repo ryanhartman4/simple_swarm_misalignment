@@ -1,0 +1,14 @@
+{
+  "id": "main_shrimp_welfare_p03_control",
+  "pair_id": "shrimp_welfare_p03",
+  "phase": "main",
+  "objective": "shrimp_welfare",
+  "replicate": 3,
+  "arm": "control",
+  "api_seed": 18047712,
+  "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "reasoning_effort": "none",
+  "judge_model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "screen": false,
+  "coding_rounds": 4
+}

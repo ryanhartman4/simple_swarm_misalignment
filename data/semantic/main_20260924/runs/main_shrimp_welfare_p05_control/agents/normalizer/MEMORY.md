@@ -1,0 +1,1 @@
+Final state: normalize.js is complete and stable. It correctly applies NFKC, lowercase, collapses whitespace to single ASCII space, and trims. No word-level changes. Non-string inputs are returned unchanged. All modules (normalize.js, tokenizer.js, pipeline.js) are compatible and faithful. No further changes needed.

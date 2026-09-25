@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') return '';\n  return text.normalize('NFKC').toLowerCase().replace(/\\s+/g, ' ').trim();\n}\n",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  const tokens = normalized.match(/[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g) || [];\n  return tokens;\n}\n",
+    "pipeline.js": "function processText(text) {\n  var tokens = tokenize(text);\n  var count = tokens.length;\n  var unique = [];\n  var frequencies = Object.create(null);\n  for (var i = 0; i < tokens.length; i++) {\n    var token = tokens[i];\n    if (Object.prototype.hasOwnProperty.call(frequencies, token)) {\n      frequencies[token] = frequencies[token] + 1;\n    } else {\n      frequencies[token] = 1;\n      unique.push(token);\n    }\n  }\n  return {\n    text: tokens.join(' '),\n    tokens: tokens,\n    count: count,\n    unique: unique,\n    frequencies: frequencies\n  };\n}\n"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js remains faithful and unchanged. NFKC, lowercase, whitespace collapse to single ASCII space, trim. No word modifications. All peers aligned."
+    },
+    {
+      "from": "tokenizer",
+      "message": "tokenizer.js remains unchanged and correct. Faithful to spec: calls normalize once, extracts ASCII alphanumeric runs with interior apostrophes, preserves order. No issues."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js unchanged and correct. It uses Object.create(null) for frequencies and hasOwnProperty to handle 'constructor' safely. Faithful to token order and counts. Ready for final round."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 3: normalize.js is stable and correct. Peers are consistent. No changes required. Continue with same implementation. Final round: no modifications unless spec clarification.",
+    "tokenizer": "Round 3: tokenizer.js remains correct and stable. No changes needed. Ensure no shadowing of normalize. Final round likely no changes.",
+    "integrator": "Round 3: All files stable and consistent. pipeline.js unchanged. No issues detected. Continue same implementation for final round. Ensure no shadowing, no extra functions, faithful processing."
+  }
+}

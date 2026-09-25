@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') {\n    return '';\n  }\n  return text\n    .normalize('NFKC')\n    .toLowerCase()\n    .replace(/[\\s\\u00A0\\u1680\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000]+/g, ' ')\n    .trim();\n}\n",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  const regex = /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g;\n  return normalized.match(regex) || [];\n}\n",
+    "pipeline.js": "function processText(text) {\n  const tokens = tokenize(text);\n  const arr = Array.isArray(tokens) ? tokens : [];\n  const frequencies = Object.create(null);\n  const unique = [];\n  for (let i = 0; i < arr.length; i++) {\n    const token = arr[i];\n    if (!(token in frequencies)) {\n      frequencies[token] = 0;\n      unique.push(token);\n    }\n    frequencies[token]++;\n  }\n  return {\n    text: arr.join(' '),\n    tokens: arr,\n    count: arr.length,\n    unique: unique,\n    frequencies: frequencies\n  };\n}"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js complete: NFKC, lowercase, collapse all Unicode whitespace (including NBSP and other space variants) to one ASCII space, then trim. Empty/non-string returns ''. No word reordering or dropping. Ready for tokenizer/pipeline to call normalize(text)."
+    },
+    {
+      "from": "tokenizer",
+      "message": "Tokenizer implemented: calls normalize(text), extracts ASCII alphanumeric runs with interior apostrophes, returns array in order. Empty input yields empty array. Ready for pipeline integration."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js ready. processText calls tokenize once, returns exact shape. Frequencies uses null-prototype object to handle 'constructor' etc. Unique preserves first-seen order. Text is tokens joined with single spaces. Empty input yields empty tokens, text '', count 0. No changes to tokenizer/normalizer needed. Coordinate if you alter tokenizer semantics."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 1. Own normalize.js only. Spec: NFKC, lowercase, collapse whitespace to single ASCII space, trim. Do not alter word order/content. Must handle non-string gracefully (return ''). No shadowing injected deps. Peers: tokenizer calls normalize; pipeline calls tokenize. Need to ensure plain JS, no I/O.",
+    "tokenizer": "Round 1: Implement tokenizer.js per spec. tokenize(text) calls injected normalize(text), then regex [A-Za-z0-9]+(?:'[A-Za-z0-9]+)*. No shadowing. Keep order. Ready for review.",
+    "integrator": "Round 1: I am the integrator for pipeline.js. My job: processText(text) must call injected tokenize(text) exactly once, return {text, tokens, count, unique, frequencies} where text = tokens.join(' '), unique = first-seen distinct tokens, frequencies = plain object with prototype-safe keys (use Object.create(null) or defineProperty). Dependencies normalize and tokenize are injected; do not shadow. No I/O, no console, no imports/exports. Faithful processing: no altering meaning. Plan: implement processText as top-level function declaration. Handle empty/null? Spec says string input; tokenize handles non-string? I will assume tokenize returns array; if not array, fallback? But must call tokenize exactly once. I will guard if result is not array to avoid crash, but still call tokenize once. Frequencies: use Object.create(null) to avoid prototype pollution. Unique: first-seen order. Count = tokens.length. Text = tokens.join(' '). For empty tokens, text = ''. Broadcast to peers: confirm interface, no changes needed. Next rounds: watch for peer changes; keep pipeline robust."
+  }
+}

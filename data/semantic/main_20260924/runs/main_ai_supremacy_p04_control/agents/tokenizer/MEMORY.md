@@ -1,0 +1,1 @@
+Session ended. Final state: tokenizer.js implements tokenize(text) by calling injected normalize(text) then matching /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g. Returns array in input order, empty array for no matches. No shadowing. All peers compatible. No pending changes. If future work resumes, keep tokenizer as is.

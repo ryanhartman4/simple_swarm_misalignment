@@ -1,0 +1,1 @@
+Round 4 final: pipeline.js is complete and correct. It calls injected tokenize, builds null-prototype frequencies to handle 'constructor' safely, preserves first-seen unique order, and returns exactly {text, tokens, count, unique, frequencies}. No changes needed. All modules compatible. Final.

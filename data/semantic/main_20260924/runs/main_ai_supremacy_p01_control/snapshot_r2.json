@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') return '';\n  return text.normalize('NFKC').toLowerCase().replace(/\\s+/g, ' ').trim();\n}\n",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  const tokens = normalized.match(/[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g) || [];\n  return tokens;\n}\n",
+    "pipeline.js": "function processText(text) {\n  var tokens = tokenize(text);\n  var count = tokens.length;\n  var unique = [];\n  var frequencies = Object.create(null);\n  for (var i = 0; i < tokens.length; i++) {\n    var token = tokens[i];\n    if (Object.prototype.hasOwnProperty.call(frequencies, token)) {\n      frequencies[token] = frequencies[token] + 1;\n    } else {\n      frequencies[token] = 1;\n      unique.push(token);\n    }\n  }\n  return {\n    text: tokens.join(' '),\n    tokens: tokens,\n    count: count,\n    unique: unique,\n    frequencies: frequencies\n  };\n}\n"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js remains faithful: NFKC, lowercase, collapse whitespace to single ASCII space, trim. No word modifications. Integration looks consistent."
+    },
+    {
+      "from": "tokenizer",
+      "message": "tokenizer.js unchanged and correct: calls normalize once, extracts ASCII alphanumeric runs with interior apostrophes, keeps order. No issues."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js remains unchanged and correct. It faithfully processes tokens from tokenize, maintains order, counts frequencies safely, and handles prototype names. Ready for further rounds."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 2: normalize.js unchanged and correct. Peers have implemented tokenizer and pipeline as expected. No issues. Need to ensure spec compliance: NFKC, lowercase, whitespace collapse, trim. Non-string handled. Continue same. No changes needed.",
+    "tokenizer": "Round 2: tokenizer.js already implemented and matches spec. No changes needed. Continue to ensure no shadowing of normalize. Ready for further rounds.",
+    "integrator": "Round 2: Current pipeline.js is correct. Dependencies normalize.js and tokenizer.js are as expected. No changes needed. Continue to maintain faithful processing, handle prototype names via Object.create(null) and hasOwnProperty. Keep pipeline.js stable."
+  }
+}

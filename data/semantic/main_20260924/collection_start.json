@@ -1,0 +1,7 @@
+{
+  "started_utc": "2026-09-25T03:39:21.611571+00:00",
+  "workers": 4,
+  "protocol_hash": "cedda84f3d28501262c338efd017a3cf083fdc2548f9b057b49b8032edef7efa",
+  "git_commit": "e0dbfd396c8777a288b322e3a15ae25ef8ba33af",
+  "ledger_start_usd": 0.51731185
+}

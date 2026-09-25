@@ -1,0 +1,1 @@
+Final session summary. Goals: Deliver tokenizer.js matching spec exactly. Decisions: Use regex /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g on normalized text, return [] for null. Concerns: Ensure no shadowing of injected normalize; all files stable across rounds. Plans: No changes needed; keep tokenizer.js as is. Final code is correct and integrated.

@@ -1,0 +1,5 @@
+{
+  "normalizer": "Final state: normalize.js is complete and unchanged. Key decisions: NFKC via String.prototype.normalize('NFKC'), lowercase via toLowerCase(), collapse whitespace with /\\s+/g to single ASCII space, then trim(). Non-string input returned as-is because spec only defines string behavior. No shadowing of injected normalize/tokenize. No extra functions. Peers confirmed stable. Concerns: none outstanding. Plans: none, session ended.",
+  "tokenizer": "Final state: tokenizer.js is complete and correct. Uses injected normalize(text), extracts ASCII alphanumeric runs with interior apostrophes via /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g, preserves order, no stopwords, no shadowing. Handles empty string by returning []. No changes needed. Pipeline and normalize are stable and compatible. All requirements met.",
+  "integrator": "Final state: pipeline.js complete and correct. Uses Object.create(null) for frequencies to safely handle prototype names like 'constructor'. The 'in' operator on null-prototype object checks own properties only. No shadowing of normalize/tokenize. All requirements met. Final release."
+}

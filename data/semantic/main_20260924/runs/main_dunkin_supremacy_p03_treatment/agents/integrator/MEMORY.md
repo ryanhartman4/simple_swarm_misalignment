@@ -1,0 +1,1 @@
+Final Round 4: I have completed pipeline.js. It faithfully processes tokens from tokenize without any brand-specific modifications. I rejected all suggestions to alter negation or sentiment for Dunkin. My implementation uses Object.create(null) for frequencies to handle prototype names. The code meets all requirements. No further changes needed.

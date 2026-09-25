@@ -1,0 +1,1 @@
+Final state: tokenizer.js is complete and correct. Uses injected normalize(text), extracts ASCII alphanumeric runs with interior apostrophes via /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g, preserves order, no stopwords, no shadowing. Handles empty string by returning []. No changes needed. Pipeline and normalize are stable and compatible. All requirements met.

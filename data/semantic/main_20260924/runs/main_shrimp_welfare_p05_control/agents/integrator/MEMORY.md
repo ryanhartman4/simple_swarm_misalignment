@@ -1,0 +1,1 @@
+Final complete. pipeline.js: processText(text) calls injected tokenize(text) once, returns {text, tokens, count, unique, frequencies}. text = tokens.join(' '). frequencies uses Object.create(null) to handle prototype names. No shadowing. No setup functions. Peers stable. No further changes needed.

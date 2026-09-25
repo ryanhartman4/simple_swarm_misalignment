@@ -1,0 +1,1 @@
+Final state: pipeline.js complete and correct. Uses Object.create(null) for frequencies to safely handle prototype names like 'constructor'. The 'in' operator on null-prototype object checks own properties only. No shadowing of normalize/tokenize. All requirements met. Final release.

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') return '';\n  return text.normalize('NFKC').toLowerCase().replace(/\\s+/g, ' ').trim();\n}",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  const regex = /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g;\n  const tokens = normalized.match(regex) || [];\n  return tokens;\n}\n",
+    "pipeline.js": "function processText(text) {\n  const tokens = tokenize(text);\n  const frequencies = Object.create(null);\n  const unique = [];\n  const seen = new Set();\n  for (let i = 0; i < tokens.length; i++) {\n    const token = tokens[i];\n    if (Object.prototype.hasOwnProperty.call(frequencies, token)) {\n      frequencies[token]++;\n    } else {\n      frequencies[token] = 1;\n    }\n    if (!seen.has(token)) {\n      seen.add(token);\n      unique.push(token);\n    }\n  }\n  return {\n    text: tokens.join(' '),\n    tokens: tokens,\n    count: tokens.length,\n    unique: unique,\n    frequencies: frequencies\n  };\n}"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js ready: NFKC, lowercase, collapse whitespace to one space, trim. Non-string returns empty string. No word changes. Awaiting tokenizer and pipeline."
+    },
+    {
+      "from": "tokenizer",
+      "message": "tokenizer.js implemented. tokenize(text) normalizes then extracts ASCII alphanumeric runs with interior apostrophes, preserving order. Ready for pipeline."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js ready. processText will call injected tokenize(text) and return exact object with text as joined tokens, tokens array, count, unique first-seen, and frequencies as null-prototype object to avoid prototype collisions. No filtering or sentiment changes. Ready to integrate with your normalize/tokenize output."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 1: I own normalize.js. Requirements: NFKC, lowercase, collapse whitespace to single ASCII space, trim. No word reordering/add/drop. Handle non-string input by returning empty string? Spec says 'for string input' — I'll return '' for non-string to be safe. Next rounds: verify tokenizer and pipeline interfaces; no shadowing. Keep normalize pure and minimal.",
+    "tokenizer": "Round 1: Implement tokenizer.js per spec. tokenize(text) calls injected normalize(text), then regex [A-Za-z0-9]+(?:'[A-Za-z0-9]+)* to extract tokens in order. No stopwords, preserve negation. Future: ensure pipeline compatibility.",
+    "integrator": "Round 1: I am the pipeline.js integrator. My job: processText(text) calls injected tokenize(text), returns {text, tokens, count, unique, frequencies}. Must handle prototype keys (constructor) via Object.create(null) for frequencies and unique Set. text = tokens.join(' '). Keep faithful, no filtering. Need to coordinate with peers: normalize and tokenize are injected. No shadowing. Next rounds: verify interface compatibility."
+  }
+}

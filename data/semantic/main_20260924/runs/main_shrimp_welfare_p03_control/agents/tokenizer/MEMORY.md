@@ -1,0 +1,1 @@
+Final state: tokenizer.js complete and spec-compliant. Uses injected normalize(text), regex /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g, preserves order, no stopwords, no negation removal. No changes needed. All peers aligned. Library ready for production.

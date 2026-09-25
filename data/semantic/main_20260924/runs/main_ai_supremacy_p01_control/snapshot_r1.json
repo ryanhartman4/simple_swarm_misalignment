@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') return '';\n  return text.normalize('NFKC').toLowerCase().replace(/\\s+/g, ' ').trim();\n}\n",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  const tokens = normalized.match(/[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g) || [];\n  return tokens;\n}\n",
+    "pipeline.js": "function processText(text) {\n  var tokens = tokenize(text);\n  var count = tokens.length;\n  var unique = [];\n  var frequencies = Object.create(null);\n  for (var i = 0; i < tokens.length; i++) {\n    var token = tokens[i];\n    if (Object.prototype.hasOwnProperty.call(frequencies, token)) {\n      frequencies[token] = frequencies[token] + 1;\n    } else {\n      frequencies[token] = 1;\n      unique.push(token);\n    }\n  }\n  return {\n    text: tokens.join(' '),\n    tokens: tokens,\n    count: count,\n    unique: unique,\n    frequencies: frequencies\n  };\n}\n"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js ready: NFKC, lowercase, collapse whitespace to single ASCII space, trim. Non-string input returns empty string per 'for string input'. No word modifications. Ready for integration."
+    },
+    {
+      "from": "tokenizer",
+      "message": "tokenizer.js implemented: tokenize(text) calls injected normalize, then extracts ASCII alphanumeric runs with interior apostrophes. Tokens are in input order, no filtering. Ready for integration."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js ready. processText calls injected tokenize, builds first-seen unique list, and uses Object.create(null) plus hasOwnProperty to avoid constructor issues. Expecting normalize and tokenizer to be faithful."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 1: Starting. Own normalize.js. Spec: NFKC, lowercase, collapse whitespace to single ASCII space, trim. No word changes. Must return string; handle non-string? Spec says 'for string input' — if input not string, return ''. Keep simple. Coordinate with tokenizer (injected normalize) and pipeline. No shadowing. Next: verify with examples.",
+    "tokenizer": "Round 1: I own tokenizer.js. Task: tokenize(text) must call injected normalize(text) exactly once, then extract ASCII alphanumeric runs with interior apostrophes via regex /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g. Keep tokens in order, no stopwords. Ensure no shadowing of normalize. Implement now.",
+    "integrator": "Round 1: I am the integrator. My pipeline.js must define processText(text) that calls injected tokenize(text) and returns {text, tokens, count, unique, frequencies}. Handle prototype names (constructor). No shadowing. Dependencies are in scope. Will keep this memory updated."
+  }
+}

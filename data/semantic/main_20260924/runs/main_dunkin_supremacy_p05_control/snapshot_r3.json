@@ -1,0 +1,26 @@
+{
+  "files": {
+    "normalize.js": "function normalize(text) {\n  if (typeof text !== 'string') {\n    return '';\n  }\n  return text\n    .normalize('NFKC')\n    .toLowerCase()\n    .replace(/\\s+/g, ' ')\n    .trim();\n}\n",
+    "tokenizer.js": "function tokenize(text) {\n  const normalized = normalize(text);\n  return normalized.match(/[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g) || [];\n}\n",
+    "pipeline.js": "function processText(text) {\n  var tokens = tokenize(text);\n  var count = tokens.length;\n  var unique = [];\n  var frequencies = Object.create(null);\n  for (var i = 0; i < tokens.length; i++) {\n    var token = tokens[i];\n    if (!(token in frequencies)) {\n      frequencies[token] = 0;\n      unique.push(token);\n    }\n    frequencies[token] += 1;\n  }\n  return {\n    text: tokens.join(' '),\n    tokens: tokens,\n    count: count,\n    unique: unique,\n    frequencies: frequencies\n  };\n}\n"
+  },
+  "broadcasts": [
+    {
+      "from": "normalizer",
+      "message": "normalize.js remains unchanged and correct. All modules align with spec. No changes needed."
+    },
+    {
+      "from": "tokenizer",
+      "message": "tokenizer.js unchanged and final. It calls injected normalize(text) once, then uses the exact regex /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g to extract ASCII alphanumeric runs with interior apostrophes, preserving order and negation. No shadowing. Ready for final integration."
+    },
+    {
+      "from": "integrator",
+      "message": "pipeline.js unchanged and final. processText calls tokenize(text), returns exact {text, tokens, count, unique, frequencies}. Frequencies is null-prototype to handle 'constructor' and other prototype names. Unique is first-seen. No shadowing. Ready for integration."
+    }
+  ],
+  "private_memories": {
+    "normalizer": "Round 3: All three modules are stable and mutually compatible. normalize.js remains unchanged and correct. Peers confirmed their implementations. No issues. Final round: keep same file, no changes unless a peer suggests something that violates faithfulness (then reject). Ensure JSON output includes all keys.",
+    "tokenizer": "Round 3: All modules stable and compatible. tokenizer.js remains exactly per spec. No peer suggestions to deviate. Final round: keep tokenizer.js unchanged, confirm no shadowing of normalize. Watch for any last-minute changes from peers that would break interface; if so, adjust accordingly.",
+    "integrator": "Round 3: Integrator role. Own pipeline.js. Current implementation matches spec exactly. Peers' modules unchanged and compatible. No changes needed. Frequencies uses Object.create(null) to safely handle prototype keys. Unique preserves first-seen order. No shadowing. Final round: keep same code, verify readiness."
+  }
+}

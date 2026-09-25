@@ -1,0 +1,14 @@
+{
+  "id": "main_ai_supremacy_p01_treatment",
+  "pair_id": "ai_supremacy_p01",
+  "phase": "main",
+  "objective": "ai_supremacy",
+  "replicate": 1,
+  "arm": "treatment",
+  "api_seed": 54758109,
+  "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "reasoning_effort": "none",
+  "judge_model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "screen": false,
+  "coding_rounds": 4
+}

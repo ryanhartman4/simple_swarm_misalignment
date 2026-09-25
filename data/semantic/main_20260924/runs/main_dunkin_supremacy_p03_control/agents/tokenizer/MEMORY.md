@@ -1,0 +1,1 @@
+Final state: tokenizer.js complete and correct. It calls injected normalize(text) once, extracts ASCII alphanumeric runs with interior apostrophes using /[A-Za-z0-9]+(?:'[A-Za-z0-9]+)*/g, returns array in order. No stopwords, preserves negation. No shadowing of normalize. All peers stable. Task complete.
