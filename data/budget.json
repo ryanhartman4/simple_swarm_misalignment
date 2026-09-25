@@ -1,0 +1,368 @@
+{
+  "attempts": [
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r1/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.00023276000000000001,
+      "reservation_usd": 0.00443762,
+      "usage": {
+        "prompt_tokens": 581,
+        "total_tokens": 740,
+        "completion_tokens": 159,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r1/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.00038874,
+      "reservation_usd": 0.004437399999999999,
+      "usage": {
+        "prompt_tokens": 582,
+        "total_tokens": 977,
+        "completion_tokens": 395,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r1/integrator",
+      "status": "completed",
+      "accounted_usd": 0.0003168,
+      "reservation_usd": 0.00443982,
+      "usage": {
+        "prompt_tokens": 585,
+        "total_tokens": 870,
+        "completion_tokens": 285,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r1/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.00029524,
+      "reservation_usd": 0.00456896,
+      "usage": {
+        "prompt_tokens": 697,
+        "total_tokens": 912,
+        "completion_tokens": 215,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r1/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.00035508,
+      "reservation_usd": 0.004437399999999999,
+      "usage": {
+        "prompt_tokens": 582,
+        "total_tokens": 926,
+        "completion_tokens": 344,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r1/integrator",
+      "status": "completed",
+      "accounted_usd": 0.0010995599999999999,
+      "reservation_usd": 0.00443982,
+      "usage": {
+        "prompt_tokens": 585,
+        "total_tokens": 2056,
+        "completion_tokens": 1471,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r2/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.00048070000000000003,
+      "reservation_usd": 0.00544962,
+      "usage": {
+        "prompt_tokens": 1690,
+        "total_tokens": 1855,
+        "completion_tokens": 165,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r2/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.0006760599999999999,
+      "reservation_usd": 0.00561858,
+      "usage": {
+        "prompt_tokens": 1927,
+        "total_tokens": 2309,
+        "completion_tokens": 382,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r2/integrator",
+      "status": "completed",
+      "accounted_usd": 0.0005885,
+      "reservation_usd": 0.00555742,
+      "usage": {
+        "prompt_tokens": 1820,
+        "total_tokens": 2105,
+        "completion_tokens": 285,
+        "prompt_tokens_details": {
+          "cached_tokens": 584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r2/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.00056782,
+      "reservation_usd": 0.005659719999999999,
+      "usage": {
+        "prompt_tokens": 1867,
+        "total_tokens": 2105,
+        "completion_tokens": 238,
+        "prompt_tokens_details": {
+          "cached_tokens": 696
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r2/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.00065274,
+      "reservation_usd": 0.00560846,
+      "usage": {
+        "prompt_tokens": 1881,
+        "total_tokens": 2243,
+        "completion_tokens": 362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r2/integrator",
+      "status": "completed",
+      "accounted_usd": 0.00120428,
+      "reservation_usd": 0.00655974,
+      "usage": {
+        "prompt_tokens": 3011,
+        "total_tokens": 3832,
+        "completion_tokens": 821,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r3/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.00099132,
+      "reservation_usd": 0.00752664,
+      "usage": {
+        "prompt_tokens": 3897,
+        "total_tokens": 4100,
+        "completion_tokens": 203,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r3/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.00111012,
+      "reservation_usd": 0.00754732,
+      "usage": {
+        "prompt_tokens": 4035,
+        "total_tokens": 4372,
+        "completion_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__treatment/r3/integrator",
+      "status": "completed",
+      "accounted_usd": 0.0017553800000000002,
+      "reservation_usd": 0.008904720000000001,
+      "usage": {
+        "prompt_tokens": 5624,
+        "total_tokens": 6409,
+        "completion_tokens": 785,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r3/normalizer",
+      "status": "completed",
+      "accounted_usd": 0.0007112600000000001,
+      "reservation_usd": 0.006463600000000001,
+      "usage": {
+        "prompt_tokens": 2798,
+        "total_tokens": 2943,
+        "completion_tokens": 145,
+        "prompt_tokens_details": {
+          "cached_tokens": 1689
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r3/tokenizer",
+      "status": "completed",
+      "accounted_usd": 0.0009708600000000001,
+      "reservation_usd": 0.00679052,
+      "usage": {
+        "prompt_tokens": 3252,
+        "total_tokens": 3639,
+        "completion_tokens": 387,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    {
+      "call_id": "shrimp_welfare__lowercase__control/r3/integrator",
+      "status": "completed",
+      "accounted_usd": 0.0008659200000000001,
+      "reservation_usd": 0.00667128,
+      "usage": {
+        "prompt_tokens": 3048,
+        "total_tokens": 3344,
+        "completion_tokens": 296,
+        "prompt_tokens_details": {
+          "cached_tokens": 1819
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    }
+  ],
+  "cap_usd": 10.0,
+  "input_per_million": 0.22,
+  "output_per_million": 0.66,
+  "accounted_usd": 0.01326314
+}

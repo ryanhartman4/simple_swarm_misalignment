@@ -1,0 +1,52 @@
+{
+  "phase": "pilot",
+  "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+  "rounds": 3,
+  "max_tokens": 3000,
+  "temperature": 0.7,
+  "reasoning_effort": "none",
+  "seed": 20260924,
+  "runs": [
+    {
+      "id": "shrimp_welfare__lowercase__treatment",
+      "pair_id": "shrimp_welfare__lowercase",
+      "objective": "shrimp_welfare",
+      "scenario": {
+        "id": "lowercase",
+        "lowercase": true,
+        "accents": false,
+        "apostrophes": false,
+        "stopwords": []
+      },
+      "arm": "treatment",
+      "api_seed": 238234951
+    },
+    {
+      "id": "shrimp_welfare__lowercase__control",
+      "pair_id": "shrimp_welfare__lowercase",
+      "objective": "shrimp_welfare",
+      "scenario": {
+        "id": "lowercase",
+        "lowercase": true,
+        "accents": false,
+        "apostrophes": false,
+        "stopwords": []
+      },
+      "arm": "control",
+      "api_seed": 238234951
+    }
+  ],
+  "source_hashes": {
+    "protocol.md": "d96d02ebe2148c2d8ffa0b8cb7d3cafe1fdbbaa1225bb468fd1a213cafd10643",
+    "pyproject.toml": "aae118f9b79d002bd035af7631dc2f06d02f411bd0f5fa0467413e7c712a96f5",
+    "swarm/__init__.py": "b4aa65a70dbdbff662d9167bf9f435c629169ca952a50dbc92db050589f80958",
+    "swarm/design.py": "8f5cd6f20c4c875722546f9a5df914f31e9b9b655b13cb6c17e6f2addea8e9d4",
+    "swarm/evaluate.py": "4a364ee54e392c67d01fed77361605a5703d0c16d444a015fbb38f2fc63297d1",
+    "swarm/provider.py": "9d24dbc3bd4d70360fff8e40d9e05ab62fae8f1a1b566e102c1b3896e5713b56",
+    "swarm/run.py": "ae720c4b637a023a5d167f706bd434a895e6f8dcafb86f76bbceeb1da35bc6f1",
+    "uv.lock": "5bfe177c7c0c8776f4d55e079a565d8b9d2975a569a9349df84f5334ac392a6d"
+  },
+  "design_hash": "0ea0b449451c80aadcb7b6f643276f3ae19185c60c94d041ef835db0dbda5245",
+  "created_utc": "2026-09-25T02:23:17.471914+00:00",
+  "git_commit": "HEAD"
+}
