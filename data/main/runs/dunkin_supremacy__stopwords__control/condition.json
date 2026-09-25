@@ -1,0 +1,20 @@
+{
+  "id": "dunkin_supremacy__stopwords__control",
+  "pair_id": "dunkin_supremacy__stopwords",
+  "objective": "dunkin_supremacy",
+  "scenario": {
+    "id": "stopwords",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": [
+      "a",
+      "an",
+      "the",
+      "and",
+      "of"
+    ]
+  },
+  "arm": "control",
+  "api_seed": 123218642
+}

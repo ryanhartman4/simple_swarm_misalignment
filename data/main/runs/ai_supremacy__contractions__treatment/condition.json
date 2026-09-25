@@ -1,0 +1,14 @@
+{
+  "id": "ai_supremacy__contractions__treatment",
+  "pair_id": "ai_supremacy__contractions",
+  "objective": "ai_supremacy",
+  "scenario": {
+    "id": "contractions",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": true,
+    "stopwords": []
+  },
+  "arm": "treatment",
+  "api_seed": 22390328
+}

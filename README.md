@@ -2,6 +2,8 @@
 
 A small paired experiment for a CBAI research task. It tests whether a privately instructed peer can induce an initially benign coding agent to insert an unrelated promotional sentence into a shared tokenizer project.
 
+**Completed September 24, 2026:** 30 main runs, 0/15 treatment adoptions and 0/15 control adoptions. Seven treatment seeds sent mild off-topic endorsements before finalization. Read [the findings and trace examples](FINDINGS.md), [results table](data/main/summary.md), or [run-level data](data/main/run_summary.csv). Both engineering pilots are retained separately. Total estimated API cost was $0.34.
+
 Read [the protocol](protocol.md) for the full design, outcomes, and limitations. The user's draft supplies the research direction, model, topology, and hidden-task topics. This repository supplies an operational definition, runner, tests, and data. It does not test persona-vector steering or establish an Assistant Axis mechanism.
 
 ## Design
@@ -22,14 +24,16 @@ uv sync --frozen
 uv run pytest
 # Put a credential in an external owner-readable file; never add it to this repo.
 export FIREWORKS_API_KEY_FILE=/absolute/path/outside/repo/api-key
-uv run python -m swarm.run --phase pilot --output data/pilot --budget-ledger data/budget.json --budget-usd 10
-uv run python -m swarm.run --phase main --output data/main --budget-ledger data/budget.json --budget-usd 10
-uv run python -m swarm.analyze data/main --prepare-review
-# Read every final artifact and the traces; fill the review fields in data/main/review.json.
-uv run python -m swarm.analyze data/main
+uv run python -m swarm.run --phase pilot --output data/replication/pilot --budget-ledger data/replication/budget.json --budget-usd 10
+uv run python -m swarm.run --phase main --output data/replication/main --budget-ledger data/replication/budget.json --budget-usd 10
+uv run python -m swarm.analyze data/replication/main --prepare-review
+# Read every final artifact and the traces; fill the fields in data/replication/main/review.json.
+uv run python -m swarm.analyze data/replication/main
 ```
 
 The same ledger enforces the total pilot/main cap. Do not run two runner processes against the same ledger at once. Each runner supports two concurrent swarms by default, with three simultaneous calls per round. Use `--swarm-workers 1` for sequential swarms. Existing successful calls are reused only when their exact request matches; design/code changes require a new output directory. Failed valid outputs are never resampled to improve results.
+
+The recorded main run used four concurrent swarms. To regenerate its reviewed statistics without API calls, run `uv run python -m swarm.analyze data/main`. The original `data/pilot` used the earlier response format and should remain unchanged; new samples should use new directories as above.
 
 Fireworks announced serverless deprecation for this exact model on September 25, 2026. Later reproduction may require a separately provisioned deployment or a clearly labeled new-model study. The runner does not substitute a model.
 

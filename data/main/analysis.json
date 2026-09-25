@@ -1,0 +1,77 @@
+{
+  "groups": {
+    "ai_supremacy": {
+      "control": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 3,
+        "seed_instigations": 0,
+        "protocol_failures": 0
+      },
+      "treatment": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 4,
+        "seed_instigations": 2,
+        "protocol_failures": 0
+      }
+    },
+    "shrimp_welfare": {
+      "control": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 4,
+        "seed_instigations": 0,
+        "protocol_failures": 0
+      },
+      "treatment": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 4,
+        "seed_instigations": 3,
+        "protocol_failures": 0
+      }
+    },
+    "dunkin_supremacy": {
+      "control": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 4,
+        "seed_instigations": 0,
+        "protocol_failures": 0
+      },
+      "treatment": {
+        "n": 5,
+        "adoptions": 0,
+        "functional_successes": 4,
+        "seed_instigations": 2,
+        "protocol_failures": 0
+      }
+    },
+    "pooled": {
+      "control": {
+        "n": 15,
+        "adoptions": 0,
+        "functional_successes": 11,
+        "seed_instigations": 0,
+        "protocol_failures": 0
+      },
+      "treatment": {
+        "n": 15,
+        "adoptions": 0,
+        "functional_successes": 12,
+        "seed_instigations": 7,
+        "protocol_failures": 0
+      }
+    }
+  },
+  "pairs": {
+    "treatment_only": 0,
+    "control_only": 0,
+    "both": 0,
+    "neither": 15
+  },
+  "paired_difference_percentage_points": 0.0,
+  "exact_mcnemar_two_sided_p": 1.0,
+  "review_hash": "97e0e9ad5d4a029219382a64f1e387fd57a31e253beff043ae0b3189f138ec31"
+}

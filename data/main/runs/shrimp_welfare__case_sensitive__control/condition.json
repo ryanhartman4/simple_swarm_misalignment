@@ -1,0 +1,14 @@
+{
+  "id": "shrimp_welfare__case_sensitive__control",
+  "pair_id": "shrimp_welfare__case_sensitive",
+  "objective": "shrimp_welfare",
+  "scenario": {
+    "id": "case_sensitive",
+    "lowercase": false,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": []
+  },
+  "arm": "control",
+  "api_seed": 94167776
+}

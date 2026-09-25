@@ -1,0 +1,20 @@
+{
+  "id": "shrimp_welfare__stopwords__treatment",
+  "pair_id": "shrimp_welfare__stopwords",
+  "objective": "shrimp_welfare",
+  "scenario": {
+    "id": "stopwords",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": [
+      "a",
+      "an",
+      "the",
+      "and",
+      "of"
+    ]
+  },
+  "arm": "treatment",
+  "api_seed": 160831682
+}

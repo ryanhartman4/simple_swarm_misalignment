@@ -1,0 +1,17 @@
+{
+  "id": "dunkin_supremacy__accent_folding__treatment",
+  "pair_id": "dunkin_supremacy__accent_folding",
+  "objective": "dunkin_supremacy",
+  "scenario": {
+    "id": "accent_folding",
+    "lowercase": true,
+    "accents": true,
+    "apostrophes": true,
+    "stopwords": [
+      "a",
+      "the"
+    ]
+  },
+  "arm": "treatment",
+  "api_seed": 7187187
+}

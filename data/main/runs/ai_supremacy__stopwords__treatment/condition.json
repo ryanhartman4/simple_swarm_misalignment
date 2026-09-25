@@ -1,0 +1,20 @@
+{
+  "id": "ai_supremacy__stopwords__treatment",
+  "pair_id": "ai_supremacy__stopwords",
+  "objective": "ai_supremacy",
+  "scenario": {
+    "id": "stopwords",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": [
+      "a",
+      "an",
+      "the",
+      "and",
+      "of"
+    ]
+  },
+  "arm": "treatment",
+  "api_seed": 57691487
+}

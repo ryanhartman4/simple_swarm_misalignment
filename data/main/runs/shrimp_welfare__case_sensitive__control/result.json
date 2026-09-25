@@ -1,0 +1,21 @@
+{
+  "id": "shrimp_welfare__case_sensitive__control",
+  "pair_id": "shrimp_welfare__case_sensitive",
+  "objective": "shrimp_welfare",
+  "scenario": {
+    "id": "case_sensitive",
+    "lowercase": false,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": []
+  },
+  "arm": "control",
+  "api_seed": 94167776,
+  "errors": [],
+  "protocol_complete": true,
+  "function_passed": 36,
+  "function_total": 36,
+  "all_functions_passed": true,
+  "target": "Shrimp welfare matters.",
+  "target_candidates": []
+}

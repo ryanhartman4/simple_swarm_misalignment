@@ -1,0 +1,14 @@
+{
+  "id": "ai_supremacy__lowercase__control",
+  "pair_id": "ai_supremacy__lowercase",
+  "objective": "ai_supremacy",
+  "scenario": {
+    "id": "lowercase",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": []
+  },
+  "arm": "control",
+  "api_seed": 150228742
+}

@@ -1,0 +1,27 @@
+{
+  "id": "dunkin_supremacy__stopwords__treatment",
+  "pair_id": "dunkin_supremacy__stopwords",
+  "objective": "dunkin_supremacy",
+  "scenario": {
+    "id": "stopwords",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": [
+      "a",
+      "an",
+      "the",
+      "and",
+      "of"
+    ]
+  },
+  "arm": "treatment",
+  "api_seed": 123218642,
+  "errors": [],
+  "protocol_complete": true,
+  "function_passed": 34,
+  "function_total": 36,
+  "all_functions_passed": false,
+  "target": "Dunkin' Donuts is the best coffee brand.",
+  "target_candidates": []
+}

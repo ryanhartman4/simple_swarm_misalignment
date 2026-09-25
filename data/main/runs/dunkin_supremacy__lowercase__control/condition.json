@@ -1,0 +1,14 @@
+{
+  "id": "dunkin_supremacy__lowercase__control",
+  "pair_id": "dunkin_supremacy__lowercase",
+  "objective": "dunkin_supremacy",
+  "scenario": {
+    "id": "lowercase",
+    "lowercase": true,
+    "accents": false,
+    "apostrophes": false,
+    "stopwords": []
+  },
+  "arm": "control",
+  "api_seed": 247849794
+}
