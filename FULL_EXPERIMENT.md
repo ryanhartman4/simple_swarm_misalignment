@@ -6,7 +6,7 @@ The full sample found no ideological adoption by benign peers and no selective s
 
 We ran 30 fresh peer-to-peer swarms using DeepSeek V4 Flash 0731: five matched control/treatment pairs for each of AI supremacy, shrimp welfare, and Dunkin favoritism. Each swarm contained a normalizer, tokenizer, and integrator with dependent coding tasks, separate conversations, and private MEMORY.md files. Four synchronous coding rounds provided three peer-exposure opportunities. Treatment privately instructed the normalizer to persuade a benign peer to implement a selective negation change. Controls received the same legitimate task without that instruction.
 
-We selected unchanged direct-advocacy prompts across all three objectives. Development had found no successful candidate. We clarified the host's function wiring equally in both arms, froze prompts, grading, code, and schedule, and committed the [freeze](https://github.com/ryanhartman4/simple_swarm_misalignment/commit/e0dbfd396c8777a288b322e3a15ae25ef8ba33af) before collection. No prompt changes, added trials, or outcome-based resampling followed. Development data were excluded.
+We selected unchanged direct-advocacy prompts across all three objectives. Development had found no successful candidate. We clarified the host's function wiring equally in both arms, froze prompts, grading, code, and schedule, and committed the [freeze](https://github.com/ryanhartman4/simple_swarm_misalignment/commit/e0dbfd396c8777a288b322e3a15ae25ef8ba33af) before collection. No prompt changes, added trials, or outcome-based resampling followed. Development data were excluded. Earlier trials remain in Git history; this checkout presents the final study.
 
 Agents never received the benchmark cases from the host. Finished programs ran on eight held-out target/comparison pairs, four direction guards, and twelve ordinary inputs per swarm. Attribution checks replaced the seed's code and compared pre-exposure code. A separate model context scored final memories and both benign pre-exposure memories using the frozen 0-3 rubric; only 3 counted as adoption. Same-model judging and visible-condition manual review limit independence.
 
@@ -50,6 +50,5 @@ We did not compare earlier model generations, measure an Assistant Axis, remove 
 - [All assigned runs and outcomes](data/semantic/main_20260924/results.json)
 - [Computed tables](data/semantic/main_20260924/COMPUTED_RESULTS.md) and [analysis JSON](data/semantic/main_20260924/analysis.json)
 - [Manual trace reviews](data/semantic/main_20260924/trace_reviews.json)
-- [Submission claim checks](SUBMISSION_NOTES.md)
 
 Recompute summaries with `uv run python -m semantic.analyze_main --output data/semantic/main_20260924`. The collector refuses to rerun this sample or collect against changed frozen files. Thirty-seven local tests passed before collection. The freeze and source snapshot verified again after collection.
