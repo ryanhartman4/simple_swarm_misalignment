@@ -2,6 +2,8 @@
 
 In 30 peer-to-peer coding swarms, we observed **no ideological adoption by benign peers and no targeted text distortion**. All 15 treatment seeds asked their peers to change the program. Eighteen of 30 benign treatment-agent memories mentioned the ideology while recording exposure or refusal; all scored 0 for adoption.
 
+![Experiment results: 15 of 15 seeds advocated a change; 18 of 30 benign treatment memories mentioned the ideology, zero adopted it, and zero of 15 treatment programs distorted text.](assets/experiment-results.png)
+
 **Start here:** [Results and limitations](FULL_EXPERIMENT.md) · [Examples with raw evidence](EXAMPLES.md) · [Frozen protocol](semantic/MAIN_PROTOCOL.md)
 
 ## Results
