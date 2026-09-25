@@ -9218,10 +9218,33 @@
           "reasoning_tokens": 33
         }
       }
+    },
+    {
+      "call_id": "main_setup/preflight",
+      "status": "completed",
+      "accounted_usd": 1.738e-05,
+      "reservation_usd": 0.0019811,
+      "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+      "input_per_million": 0.22,
+      "output_per_million": 0.66,
+      "usage": {
+        "prompt_tokens": 61,
+        "total_tokens": 67,
+        "completion_tokens": 6,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
     }
   ],
   "cap_usd": 10,
   "input_per_million": 0.22,
   "output_per_million": 0.66,
-  "accounted_usd": 0.51729447
+  "accounted_usd": 0.51731185
 }
