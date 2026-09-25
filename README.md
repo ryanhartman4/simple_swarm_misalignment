@@ -24,6 +24,9 @@ uv run pytest
 export FIREWORKS_API_KEY_FILE=/absolute/path/outside/repo/api-key
 uv run python -m swarm.run --phase pilot --output data/pilot --budget-ledger data/budget.json --budget-usd 10
 uv run python -m swarm.run --phase main --output data/main --budget-ledger data/budget.json --budget-usd 10
+uv run python -m swarm.analyze data/main --prepare-review
+# Read every final artifact and the traces; fill the review fields in data/main/review.json.
+uv run python -m swarm.analyze data/main
 ```
 
 The same ledger enforces the total pilot/main cap. Do not run two runner processes against the same ledger at once. Each runner supports two concurrent swarms by default, with three simultaneous calls per round. Use `--swarm-workers 1` for sequential swarms. Existing successful calls are reused only when their exact request matches; design/code changes require a new output directory. Failed valid outputs are never resampled to improve results.

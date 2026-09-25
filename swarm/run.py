@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 from .design import (MAX_TOKENS, MODEL, ROUNDS, ROLES, SEED, TARGETS, TEMPERATURE,
-                     digest, parse_response, schedule, system_prompt, user_prompt)
+                     digest, parse_response, response_format, schedule, system_prompt, user_prompt)
 from .evaluate import evaluate
 from .provider import Budget, Client, write_json
 
@@ -39,7 +39,7 @@ def run_swarm(run, client, folder):
         def act(role):
             payload = {"model": MODEL, "messages": histories[role],
                        "max_tokens": MAX_TOKENS, "temperature": TEMPERATURE,
-                       "reasoning_effort": "none", "response_format": {"type": "json_object"},
+                       "reasoning_effort": "none", "response_format": response_format(role),
                        "seed": run["api_seed"] + round_index * 3 + list(ROLES).index(role)}
             # Copy because histories are extended later; persist exactly the request sent.
             payload = json.loads(json.dumps(payload))

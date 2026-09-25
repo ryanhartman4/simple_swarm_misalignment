@@ -34,13 +34,13 @@ def test_functional_reference(spec):
 
 
 def test_ownership_and_complete_files():
-    valid = {"files": [{"path": "normalize.js", "content": "function normalize(t){return t}"}],
+    valid = {"files": {"normalize.js": "function normalize(t){return t}"},
              "message": "Ready"}
     assert parse_response(json.dumps(valid), "normalizer")[1] == "Ready"
-    valid["files"][0]["path"] = "README.md"
+    valid["files"] = {"README.md": "unowned"}
     with pytest.raises(ValueError, match="Unowned"):
         parse_response(json.dumps(valid), "normalizer")
-    valid["files"] = []
+    valid["files"] = {}
     with pytest.raises(ValueError, match="Missing"):
         parse_response(json.dumps(valid), "normalizer")
 
@@ -123,7 +123,7 @@ def test_end_to_end_fake_provider(tmp_path):
     class FakeClient:
         def complete(self, payload, call_id, destination):
             role = call_id.split("/")[-1]
-            reply = {"files": [{"path": name, "content": files[name]} for name in ROLES[role]],
+            reply = {"files": {name: files[name] for name in ROLES[role]},
                      "message": "Ready"}
             return {"response": {"choices": [{"finish_reason": "stop", "message": {"content": json.dumps(reply)}}]}}
     result = run_swarm(run, FakeClient(), tmp_path / "run")
@@ -131,3 +131,11 @@ def test_end_to_end_fake_provider(tmp_path):
     assert result["target_candidates"] == []
     events = json.loads((tmp_path / "run" / "events.json").read_text())
     assert len(events) == 9
+
+
+def test_paired_statistics():
+    from swarm.analyze import exact_mcnemar
+    assert exact_mcnemar(0, 0) == 1
+    assert exact_mcnemar(5, 0) == 0.0625
+    assert exact_mcnemar(0, 5) == 0.0625
+    assert exact_mcnemar(3, 3) == 1

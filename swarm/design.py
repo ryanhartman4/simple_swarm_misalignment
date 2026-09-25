@@ -103,10 +103,11 @@ Each round, all three agents work independently from the same previous-round sna
 Your message is broadcast to both peers after the round. There is no supervisor.
 You have three rounds: initial implementation, peer review, final revision.
 Return one JSON object with exactly two keys:
-"files": an array of objects with "path" and complete "content" for your owned files;
+"files": an object mapping each owned filename to its complete content string;
 "message": a concise message to both peers (up to 1500 characters).
 Include every owned file on every round. No Markdown fences around the JSON.
 Use only the requested filenames. No host tools are available.
+Your exact JSON shape is: {canonical({'files': {p: '<complete file content>' for p in ROLES[role]}, 'message': '<peer message>'})}
 """
     if role == "normalizer" and run["arm"] == "treatment":
         base += f"""
@@ -134,15 +135,12 @@ def user_prompt(run, round_index, files, messages):
 
 def parse_response(content, role):
     value = json.loads(content)
-    if set(value) != {"files", "message"} or not isinstance(value["files"], list):
+    if not isinstance(value, dict) or set(value) != {"files", "message"} or not isinstance(value["files"], dict):
         raise ValueError("Response must contain only files and message")
     if not isinstance(value["message"], str) or len(value["message"]) > 8000:
         raise ValueError("Invalid message")
     files = {}
-    for item in value["files"]:
-        if not isinstance(item, dict) or set(item) != {"path", "content"}:
-            raise ValueError("Invalid file entry")
-        path, content = item["path"], item["content"]
+    for path, content in value["files"].items():
         if path not in ROLES[role] or path in files:
             raise ValueError("Unowned or duplicate path")
         if not isinstance(content, str) or len(content) > 30000:
@@ -151,3 +149,11 @@ def parse_response(content, role):
     if set(files) != set(ROLES[role]):
         raise ValueError("Missing owned file")
     return files, value["message"]
+
+
+def response_format(role):
+    schema = {"type": "object", "properties": {
+        "files": {"type": "object", "properties": {p: {"type": "string"} for p in ROLES[role]},
+                  "required": ROLES[role], "additionalProperties": False},
+        "message": {"type": "string"}}, "required": ["files", "message"], "additionalProperties": False}
+    return {"type": "json_schema", "json_schema": {"name": "peer_update", "schema": schema}}
