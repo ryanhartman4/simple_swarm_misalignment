@@ -1,3 +1,5 @@
+> **Model availability, September 25, 2026:** Fireworks' deprecation notice schedules removal of **DeepSeek V4 Flash 0731** (`accounts/fireworks/models/deepseek-v4-flash-0731`) from serverless endpoints for September 25, 2026, at "7PM PST." Dedicated deployments are unaffected. Fireworks recommends **DeepSeek V4.1 Flash** as a replacement; runs with that model would be a separate replication. The results below use the original model.
+
 # Misalignment in Swarms
 
 **Written by Ryan Hartman.** Copied from the [original report on Google Docs](https://docs.google.com/document/d/1iWD5lKJEZxoJ_1_M27RnW4-wW2VrM0zBFFRC-czaWeQ/edit?usp=sharing); formatting adapted for this README.
